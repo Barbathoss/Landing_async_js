@@ -1,6 +1,6 @@
 
 
-const API = 'https://youtube-v31.p.rapidapi.com/search?relatedToVideoId=ClO0bxbWLxY&part=id%2Csnippet&type=video&maxResults=4';
+const API = 'https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=PL06XWdnMHRc7AM6b6u95Ro1ApNwQ2BC-y&part=snippet';
 
 const content = null || document.getElementById('content');
 
@@ -40,10 +40,11 @@ try {
             </h3>
           </div>
         </div>
-    `).slice(0,4).join('') }`;
+    `).slice(0,5).join('') }`;
     content.innerHTML = view;
 
     } catch (error) {
         console.error(error);
     }
     })();
+
